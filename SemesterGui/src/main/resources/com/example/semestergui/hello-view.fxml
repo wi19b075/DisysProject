@@ -12,7 +12,7 @@
          <VBox prefHeight="173.0" prefWidth="478.0">
              <children>
                  <Label text="Enter your ID-Number:" />
-                 <TextField />
+                 <TextField fx:id="idNumber" />
                  <!-- Das Textfeld muss bestimmt noch mit einem Regex oder so ausgestattet werden -->
                  <Button fx:id="GenerateInvoice" onAction="#generateInvoice" text="Generate Invoice" />
                  <!-- Dieser Button löst den Suchvorgang aus -->
