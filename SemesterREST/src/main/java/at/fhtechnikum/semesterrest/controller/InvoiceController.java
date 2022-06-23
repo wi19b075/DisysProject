@@ -23,14 +23,13 @@ public class InvoiceController {
 
 
         try (Connection conn = connect()) {
-            String sql = "SELECT * FROM processes WHERE customer_id == id";
+            String sql = "SELECT * FROM processes WHERE customer_id = id";
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
                 Charging charging = new Charging();
-
                 charging.date = resultSet.getString("charging_date");
                 charging.amount = resultSet.getFloat("charging_amount");
                 //charging.station_id = resultSet.getInt("station_id");

@@ -54,8 +54,16 @@ public class SemesterController {
         stage.close();
     }
 
-    public void generateInvoice() {
-        String id = idNumber.getText();
+    public void generateInvoice() throws URISyntaxException, IOException, InterruptedException {
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI(API + "/customers/" + idNumber.getText() ))
+                .POST(HttpRequest.BodyPublishers.noBody())
+                .build();
+
+        //HttpResponse
+
+
         // id nun an Datenbank schicken
     }
 
