@@ -17,9 +17,9 @@ public class Main {
 
         //Ich möchte die ID automatisch generieren lassen
         //Gibt es eine Möglichkeit, die Datenbank automatisch mit ein paar dummy-Daten zu befüllen?
-        preparedStatement.setInt(1, 1234 );
-        preparedStatement.setString(2, "Kunde1" );
-        preparedStatement.setString(3, "Adresse1" );
+        preparedStatement.setInt(1, 1235 );
+        preparedStatement.setString(2, "Kunde2" );
+        preparedStatement.setString(3, "Adresse2" );
         preparedStatement.setString(4, "City1" );
         preparedStatement.setInt(5, 1234 );
 
